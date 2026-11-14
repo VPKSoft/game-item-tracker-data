@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Use the templates
+    url: https://vpksoft.github.io/game-item-tracker/
+    about: Open Game Item Tracker and install templates from Library → Online templates…
+  - name: Problems with the app itself
+    url: https://github.com/VPKSoft/game-item-tracker/issues
+    about: Report bugs and ideas for the app in its own repository.
