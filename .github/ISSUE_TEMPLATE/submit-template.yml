@@ -1,0 +1,77 @@
+name: Submit a template
+description: Share a new template, or a new version of one, without using git. A maintainer adds it to the repository.
+title: "[Template]: "
+labels: ["template submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing a template! You only need a GitHub account. No git or pull request is needed.
+
+        **How to get the file:** in Game Item Tracker, open **Library**, find your template under **Templates**
+        and click **Export**. You get a `.gitemplate.json` file. Attach it below.
+
+        A maintainer checks the template and adds it to the repository. After that, it appears for everyone
+        under **Library → Online templates…** in the app.
+
+  - type: input
+    id: game
+    attributes:
+      label: Game
+      description: The name of the game, as written in the template's *Game* field.
+      placeholder: Palia
+    validations:
+      required: true
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: New template or update?
+      options:
+        - New template
+        - Update of a template that is already online
+    validations:
+      required: true
+
+  - type: upload
+    id: template-file
+    attributes:
+      label: Template file
+      description: |
+        The exported `.gitemplate.json` file (up to 25 MB). If the upload is refused, zip the file and attach the `.zip` instead.
+    validations:
+      required: true
+      accept: ".json,.zip"
+
+  - type: input
+    id: source
+    attributes:
+      label: Where does the data come from?
+      description: |
+        A link to the source of the item data, for example a wiki page. Also enter it in the template's
+        *Source / attribution* field on the **Details** tab before exporting.
+      placeholder: https://palia.wiki.gg/wiki/Fish
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Anything else, such as what changed in an update or what is still missing.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I exported the file from Game Item Tracker, and the template's **Details** tab shows no validation issues.
+          required: true
+        - label: The template's *Source / attribution* field names where the data came from, with a link.
+          required: true
+        - label: "For an update: I edited the online version (installed from **Online templates…**) and raised its version, so existing saves can be upgraded."
+          required: false
+        - label: I have the right to share this data, and I agree that it is published in this repository.
+          required: true

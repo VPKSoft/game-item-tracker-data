@@ -34,7 +34,20 @@ P/
 
 ## Adding or updating a template
 
-Templates are added and updated **only through pull requests**.
+Before you export, fill in the template's *Source / attribution* field (**Details** tab) with where
+the data came from. When you update an existing template, start from the online version (install it
+from **Online templates…**), make your changes and raise its version on the **Details** tab, so that
+existing saves can be upgraded.
+
+### The easy way: submission form (no git needed)
+
+1. Export the template in the app: **Library → Templates → Export**.
+2. Open the [**Submit a template**](https://github.com/VPKSoft/game-item-tracker-data/issues/new?template=submit-template.yml)
+   form (you need a free GitHub account), fill it in and attach the `.gitemplate.json` file.
+3. A maintainer checks the template and adds it to the repository with a pull request. The issue is
+   closed when the template is online.
+
+### With a pull request
 
 1. Fork the repository and create a branch, for example `template/palia-bugs`.
 2. Export the template from the app (**Library → Templates → Export**) and put it in the right
@@ -43,7 +56,7 @@ Templates are added and updated **only through pull requests**.
    its `templateId`, so existing saves can be upgraded to the new version.
 4. Open a pull request and fill in the checklist.
 
-A pull request is merged only when:
+Every template, submitted either way, is added by a pull request. A pull request is merged only when:
 
 - the automatic check passes (see below): the template imports into the app without validation
   errors and is in the right folder,
