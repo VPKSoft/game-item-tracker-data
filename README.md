@@ -22,6 +22,7 @@ Templates are grouped by the first letter of the game's name, then by game:
 A/ … Z/
 P/
   Palia/
+    palia-bugs.gitemplate.json
     palia-fish.gitemplate.json
     palia-plushies.gitemplate.json
     palia-potato-pods.gitemplate.json
