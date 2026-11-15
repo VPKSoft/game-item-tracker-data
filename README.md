@@ -24,6 +24,7 @@ P/
   Palia/
     palia-bugs.gitemplate.json
     palia-fish.gitemplate.json
+    palia-guild-store-exclusives.gitemplate.json
     palia-maji-market.gitemplate.json
     palia-plushies.gitemplate.json
     palia-potato-pods.gitemplate.json
