@@ -30,6 +30,7 @@ P/
     palia-potato-pods.gitemplate.json
     palia-stickers.gitemplate.json
     palia-zekis-prize-wheel.gitemplate.json
+    palia-zekis-wondrous-machine.gitemplate.json
 ```
 
 - The letter folder is the first letter of the game's name in upper case (`Palia` → `P/`).
