@@ -23,6 +23,7 @@ A/ … Z/
 P/
   Palia/
     palia-bugs.gitemplate.json
+    palia-bundles.gitemplate.json
     palia-fish.gitemplate.json
     palia-guild-store-exclusives.gitemplate.json
     palia-maji-market.gitemplate.json
