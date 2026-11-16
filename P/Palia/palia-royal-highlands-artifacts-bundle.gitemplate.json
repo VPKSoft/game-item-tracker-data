@@ -2,11 +2,11 @@
   "format": "game-item-tracker/template",
   "schemaVersion": 1,
   "templateId": "5b0e6a59-3a43-4c2a-9a0f-6f1a4c1f7e0b",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "game": "Palia",
   "name": "Palia – Royal Highlands Artifacts Bundle",
   "description": "The Royal Highlands artifacts of Palia, by collection and artifact. Each piece is placed in its bundle once.",
-  "updatedAt": "2026-11-16T06:11:04.712Z",
+  "updatedAt": "2026-11-16T11:35:51.460Z",
   "attributeDefs": [],
   "counterDefs": [
     {
@@ -14,6 +14,7 @@
       "label": "Placed",
       "kind": "manual",
       "max": 1,
+      "role": "owned",
       "order": 0
     },
     {
@@ -29,7 +30,6 @@
       "sumOf": [
         "storage"
       ],
-      "role": "owned",
       "order": 2
     },
     {
