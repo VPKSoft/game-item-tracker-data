@@ -5,23 +5,31 @@
   "version": "1.0.0",
   "game": "Palia",
   "name": "Palia – Tints",
-  "description": "The tints of Palia and their ingredients. Set To craft on the tints you want, and the Materials list shows the ingredients to gather.",
-  "updatedAt": "2026-11-20T10:29:50.054Z",
+  "description": "The tints of Palia and their ingredients. Tick Acquired for the recipes you know, set To craft on the tints you want, and the Materials list shows the ingredients to gather.",
+  "updatedAt": "2026-11-20T10:44:11.353Z",
   "attributeDefs": [],
   "counterDefs": [
+    {
+      "key": "acquired",
+      "label": "Acquired",
+      "kind": "manual",
+      "max": 1,
+      "order": 0
+    },
     {
       "key": "inventory",
       "label": "Inventory",
       "kind": "manual",
       "role": "owned",
-      "order": 0
+      "order": 1
     },
     {
       "key": "to-craft",
       "label": "To craft",
       "kind": "manual",
       "role": "planned",
-      "order": 1
+      "requires": "acquired",
+      "order": 2
     }
   ],
   "variantDefs": [],
