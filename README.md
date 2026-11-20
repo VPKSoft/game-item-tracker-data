@@ -32,6 +32,7 @@ P/
     palia-potato-pods.gitemplate.json
     palia-royal-highlands-artifacts-bundle.gitemplate.json
     palia-stickers.gitemplate.json
+    palia-tints.gitemplate.json
     palia-zekis-prize-wheel.gitemplate.json
     palia-zekis-wondrous-machine.gitemplate.json
 ```
