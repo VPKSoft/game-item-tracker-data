@@ -32,6 +32,7 @@ P/
     palia-maji-market.gitemplate.json
     palia-plushies.gitemplate.json
     palia-potato-pods.gitemplate.json
+    palia-roofing.gitemplate.json
     palia-royal-highlands-artifacts-bundle.gitemplate.json
     palia-stickers.gitemplate.json
     palia-tints.gitemplate.json
