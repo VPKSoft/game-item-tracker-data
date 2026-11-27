@@ -27,6 +27,7 @@ P/
     palia-elderwoods-artifacts-bundle.gitemplate.json
     palia-fish.gitemplate.json
     palia-floors.gitemplate.json
+    palia-food-recipe-items.gitemplate.json
     palia-food-recipes.gitemplate.json
     palia-guild-store-exclusives.gitemplate.json
     palia-maji-market.gitemplate.json
