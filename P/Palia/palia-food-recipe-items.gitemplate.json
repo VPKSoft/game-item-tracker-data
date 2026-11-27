@@ -2,11 +2,11 @@
   "format": "game-item-tracker/template",
   "schemaVersion": 1,
   "templateId": "5b0e6a59-3a43-4c2a-9a0f-6f1a4c1f7e12",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "game": "Palia",
   "name": "Palia – Food Recipe Items",
   "description": "The ingredients of the food recipes of Palia. Common ones are needed by several recipes, special ones by a single recipe.",
-  "updatedAt": "2026-11-27T05:54:14.893Z",
+  "updatedAt": "2026-11-27T07:23:23.606Z",
   "attributeDefs": [],
   "counterDefs": [
     {
@@ -14,9 +14,30 @@
       "label": "Amount",
       "kind": "manual",
       "order": 0
+    },
+    {
+      "key": "total",
+      "label": "Total",
+      "kind": "computed",
+      "sumOf": [
+        "amount"
+      ],
+      "acrossVariants": true,
+      "order": 1
     }
   ],
-  "variantDefs": [],
+  "variantDefs": [
+    {
+      "key": "normal",
+      "label": "Normal",
+      "order": 0
+    },
+    {
+      "key": "starred",
+      "label": "★ Starred",
+      "order": 1
+    }
+  ],
   "tags": [
     "Recipe: Akwinduu Chapaa",
     "Recipe: Anch' 'n Grits",
@@ -255,6 +276,9 @@
     {
       "id": "any-salt",
       "categoryId": "common",
+      "variants": [
+        "normal"
+      ],
       "name": "Any Salt",
       "description": "Used in: Candied Kopaa Nuts, Chapaa Asada Tacos, Chapaa Onigiri, Flowtato Fries with Ketchup, Muujin Bahari, Oysters Akwinduu, Shepp's Pie, Spicy Stir Fry, Veggie Chili",
       "attributes": {},
@@ -378,6 +402,9 @@
     {
       "id": "butter",
       "categoryId": "common",
+      "variants": [
+        "normal"
+      ],
       "name": "Butter",
       "description": "Used in: Akwinduu Chapaa, Apple Pie, Bacon-Stuffed Mushrooms, Beans On Toast, Blueberry Pie, Celebration Cake, Chapaa Asada Tacos, Chapaa Masala, Chapaa Onigiri, Crab Boil, Crab Pot Pie, Elderwood Pie, Loaded Potato Soup, Mushroom Quiche, Muujin Bahari, Oysters Akwinduu, Petit Fives, Pumpkin Pie, Quiche Caleri, Shepp's Pie, Steak Dinner, Stuffed Tomatoes",
       "attributes": {},
@@ -491,6 +518,9 @@
     {
       "id": "crystal-lake-lotus",
       "categoryId": "special",
+      "variants": [
+        "normal"
+      ],
       "name": "Crystal Lake Lotus",
       "description": "Used in: Fisherman's Brew",
       "attributes": {},
@@ -564,6 +594,9 @@
     {
       "id": "emerald-carpet-moss",
       "categoryId": "special",
+      "variants": [
+        "normal"
+      ],
       "name": "Emerald Carpet Moss",
       "description": "Used in: Fisherman's Brew",
       "attributes": {},
@@ -575,6 +608,9 @@
     {
       "id": "extremely-aged-cheese",
       "categoryId": "common",
+      "variants": [
+        "normal"
+      ],
       "name": "Extremely Aged Cheese",
       "description": "Used in: Anch' 'n Grits, Breakfast Skillet",
       "attributes": {},
@@ -587,6 +623,9 @@
     {
       "id": "flour",
       "categoryId": "common",
+      "variants": [
+        "normal"
+      ],
       "name": "Flour",
       "description": "Used in: Celebration Cake, Crab Gumbo, Fried Catfish Dinner, Macaron, Palian Onion Soup, Petit Fives, Phoenixfire Relleno, Rockhopper Legs",
       "attributes": {},
@@ -698,6 +737,9 @@
     {
       "id": "milk",
       "categoryId": "common",
+      "variants": [
+        "normal"
+      ],
       "name": "Milk",
       "description": "Used in: Bean Burger, Candied Kopaa Nuts, Celebration Cake, Chapaa Masala, Cream of Mushroom Soup, Cream of Tomato Soup, Creamy Carrot Soup, Fruit Smoothie Bowl, Loaded Flowtato, Macaron, Petit Fives, Pumpkin Pie, Rockhopper Legs",
       "attributes": {},
@@ -806,6 +848,9 @@
     {
       "id": "plant-fiber",
       "categoryId": "special",
+      "variants": [
+        "normal"
+      ],
       "name": "Plant Fiber",
       "description": "Used in: Muujin Bahari",
       "attributes": {},
@@ -906,6 +951,9 @@
     {
       "id": "soy-sauce",
       "categoryId": "common",
+      "variants": [
+        "normal"
+      ],
       "name": "Soy Sauce",
       "description": "Used in: Lucky Braised Fish, Mushroom Dumpling Soup, Rice Cake Soup, Rice Cake Stir Fry, Spicy Crab Fried Rice, Stuffed Cabbage Rolls",
       "attributes": {},
@@ -991,6 +1039,9 @@
     {
       "id": "sugar",
       "categoryId": "common",
+      "variants": [
+        "normal"
+      ],
       "name": "Sugar",
       "description": "Used in: Celebration Cake, Lucky Braised Fish, Petit Fives, Rice Cake Stir Fry, S'mores",
       "attributes": {},
@@ -1046,6 +1097,9 @@
     {
       "id": "vinegar",
       "categoryId": "common",
+      "variants": [
+        "normal"
+      ],
       "name": "Vinegar",
       "description": "Used in: Bean Burger, Flowtato Fries with Ketchup, Lucky Braised Fish, Muujin Bahari, Poke Bowl, Sushi",
       "attributes": {},
